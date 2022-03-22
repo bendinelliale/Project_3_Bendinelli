@@ -25,6 +25,7 @@
     margin: -8px;
     border-radius: 30px 30px 0px 0px;
     background-color: #EEEEEE;
+    padding: 20px;
   }
 
   .restaurant-image {
@@ -82,6 +83,7 @@
     border: none;
     background: linear-gradient(177deg, #FF79DA, #9356DC);
     text-align: center;
+    margin: 30px 40px 40px;
   }
 
   .footer-container img {
