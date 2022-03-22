@@ -1,0 +1,126 @@
+$wdt: 100%;
+$primary: #9356DC;
+$secondary: #FF79DA;
+$tertiary: #99E2D0;
+$quartiary: #EEEEEE;
+$radius: 1rem 1rem 0rem 0rem;
+$shadow: 0 0 7px rgb(204, 203, 203);
+@mixin flex__column {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+} 
+
+@media screen and (max-width: 767px){
+        body{
+            font-family: roboto;
+            display: flex;
+            flex-wrap: wrap;
+             cursor: pointer;
+        }
+        .page--container{
+            width: $wdt;
+            margin: -8px;
+        }
+        .logo--container{
+        border: 10px;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        width: $wdt;
+        margin: -8px;
+        }
+    .menu--container{
+        width: 325px;
+        margin: -8px;
+        border-radius: 30px 30px 0px 0px;
+        background-color: $quartiary;
+    }
+    .restaurant-image{
+        width: $wdt;
+        
+    }
+    .logo img{
+        width: 150px;
+        margin-left: 60px;
+    }
+    .logo{
+        padding: 12px;
+    }
+
+    .plate--container{
+        display: flex;
+        flex-wrap: wrap;
+        width: 270px;
+        flex-direction: column;
+        margin: 10px;
+        padding: 15px; 
+        background-color: white;
+        border-radius: 20px;
+
+
+    }
+
+    .ani--container{
+        color: $tertiary;
+        position: relative;
+        overflow: hidden;
+        width: 100px;
+        height: 100px; 
+            
+
+        & i{
+            color: white;
+            position: absolute;
+            right: -100px;
+            width: 100px;
+            height: 100px;
+            background-color: $tertiary;
+            transition: 1s;
+            
+            &:hover{
+            transition: 1s;
+            right: 0;
+            }
+        }
+
+    }
+
+    .bttn--purple{
+        background-color: $primary;
+        color: white;
+        border-radius: 20px;
+        width: 160px;
+        box-shadow: $shadow;
+        height: 35px;
+        border: none;
+        background: linear-gradient(177deg, $secondary, $primary);
+        text-align: center;
+    }
+.footer-container img{
+    width: 90px;
+    color: white;
+    align-items: center;
+}
+    .footer-container{
+        background-color: #6A696B;
+        color: white;
+        text-decoration: none;
+        margin: -8px;
+        padding: 20px;
+        & img{
+            width: 90px;
+            filter:invert(100%)
+        }
+        a:link {
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: none;
+        }
+        a:visited {
+            color: white;
+        }
+    }
+    }

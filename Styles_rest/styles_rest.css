@@ -1,0 +1,113 @@
+@media screen and (max-width: 767px) {
+  body {
+    font-family: roboto;
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+  }
+
+  .page--container {
+    width: 100%;
+    margin: -8px;
+  }
+
+  .logo--container {
+    border: 10px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: -8px;
+  }
+
+  .menu--container {
+    width: 325px;
+    margin: -8px;
+    border-radius: 30px 30px 0px 0px;
+    background-color: #EEEEEE;
+  }
+
+  .restaurant-image {
+    width: 100%;
+  }
+
+  .logo img {
+    width: 150px;
+    margin-left: 60px;
+  }
+
+  .logo {
+    padding: 12px;
+  }
+
+  .plate--container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 270px;
+    flex-direction: column;
+    margin: 10px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 20px;
+  }
+
+  .ani--container {
+    color: #99E2D0;
+    position: relative;
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+  }
+  .ani--container i {
+    color: white;
+    position: absolute;
+    right: -100px;
+    width: 100px;
+    height: 100px;
+    background-color: #99E2D0;
+    transition: 1s;
+  }
+  .ani--container i:hover {
+    transition: 1s;
+    right: 0;
+  }
+
+  .bttn--purple {
+    background-color: #9356DC;
+    color: white;
+    border-radius: 20px;
+    width: 160px;
+    box-shadow: 0 0 7px #cccbcb;
+    height: 35px;
+    border: none;
+    background: linear-gradient(177deg, #FF79DA, #9356DC);
+    text-align: center;
+  }
+
+  .footer-container img {
+    width: 90px;
+    color: white;
+    align-items: center;
+  }
+
+  .footer-container {
+    background-color: #6A696B;
+    color: white;
+    text-decoration: none;
+    margin: -8px;
+    padding: 20px;
+  }
+  .footer-container img {
+    width: 90px;
+    filter: invert(100%);
+  }
+  .footer-container a:link {
+    text-decoration: none;
+  }
+  .footer-container a:hover {
+    text-decoration: none;
+  }
+  .footer-container a:visited {
+    color: white;
+  }
+}/*# sourceMappingURL=styles_rest.css.map */
