@@ -181,15 +181,19 @@
   }
 
   .footer-container {
-    background-color: #6A696B;
+    background-color: #454546;
     color: white;
     text-decoration: none;
     margin: -8px;
     padding: 20px;
+    width: 285px;
   }
   .footer-container img {
     width: 90px;
     filter: invert(100%);
+    align-items: center;
+    margin-left: -10px;
+    color: white;
   }
   .footer-container a:link {
     text-decoration: none;
@@ -200,4 +204,7 @@
   .footer-container a:visited {
     color: white;
   }
-}/*# sourceMappingURL=Styles.css.map */
+  .footer-container a {
+    padding: 10px;
+  }
+}/*# sourceMappingURL=styles.css.map */
