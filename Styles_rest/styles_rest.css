@@ -23,13 +23,20 @@
   .menu--container {
     width: 325px;
     margin: -8px;
-    border-radius: 30px 30px 0px 0px;
+    border-radius: 40px 40px 0px 0px;
     background-color: #EEEEEE;
     padding: 20px;
+    position: absolute;
+    top: 240px;
+    left: 0px;
   }
 
   .restaurant-image {
     width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: -8px;
   }
 
   .logo img {
@@ -85,19 +92,25 @@
     text-align: center;
     margin: 30px 40px 40px;
   }
+  .bttn--purple--txt {
+    padding: 8px;
+  }
 
   .footer-container img {
     width: 90px;
     color: white;
     align-items: center;
+    margin-left: -10px;
   }
 
   .footer-container {
-    background-color: #6A696B;
+    background-color: #454546;
     color: white;
     text-decoration: none;
     margin: -8px;
     padding: 20px;
+    position: relative;
+    top: 134rem;
   }
   .footer-container img {
     width: 90px;
@@ -111,5 +124,8 @@
   }
   .footer-container a:visited {
     color: white;
+  }
+  .footer-container a {
+    padding: 10px;
   }
 }/*# sourceMappingURL=styles_rest.css.map */

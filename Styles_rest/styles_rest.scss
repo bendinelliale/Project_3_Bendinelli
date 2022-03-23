@@ -34,12 +34,19 @@ $shadow: 0 0 7px rgb(204, 203, 203);
     .menu--container{
         width: 325px;
         margin: -8px;
-        border-radius: 30px 30px 0px 0px;
+        border-radius: 40px 40px 0px 0px;
         background-color: $quartiary;
         padding: 20px;
+        position: absolute;
+        top: 240px;
+        left: 0px;
     }
     .restaurant-image{
-        width: $wdt;
+      width: $wdt;
+      position: relative;
+      top: 0;
+      left: 0;
+      margin: -8px;
         
     }
     .logo img{
@@ -99,18 +106,24 @@ $shadow: 0 0 7px rgb(204, 203, 203);
         background: linear-gradient(177deg, $secondary, $primary);
         text-align: center;
         margin: 30px 40px 40px;
+        &--txt{
+            padding: 8px;
+        }
     }
 .footer-container img{
     width: 90px;
     color: white;
     align-items: center;
+    margin-left: -10px;
 }
     .footer-container{
-        background-color: #6A696B;
+        background-color: #454546;
         color: white;
         text-decoration: none;
         margin: -8px;
         padding: 20px;
+        position: relative;
+        top: 134rem;
         & img{
             width: 90px;
             filter:invert(100%)
@@ -123,6 +136,9 @@ $shadow: 0 0 7px rgb(204, 203, 203);
         }
         a:visited {
             color: white;
+        }
+        & a{
+            padding: 10px;
         }
     }
     }
