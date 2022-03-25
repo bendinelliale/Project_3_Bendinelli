@@ -1,16 +1,5 @@
-$wdt: 100%;
-$primary: #9356DC;
-$secondary: #FF79DA;
-$tertiary: #99E2D0;
-$quartiary: #EEEEEE;
-$radius: 1rem 1rem 0rem 0rem;
-$shadow: 0 0 7px rgb(204, 203, 203);
-@mixin flex__column {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: space-between;
-} 
+@import "colors.scss";
+@import "mixin.scss";
 
 @media screen and (max-width: 767px){
 body{
@@ -91,6 +80,9 @@ margin: -8px;
     height: 35px;
     border: none;
     background: linear-gradient(177deg, $secondary, $primary);
+    &--txt{
+        padding: 8px;
+    }
 }
 
 
@@ -120,7 +112,8 @@ margin: -8px;
 
     & i{
         margin-left: 5px;
-        color: #9A9999;
+        color: gray;
+        
     }
 
     &:hover {
@@ -138,10 +131,14 @@ margin: -8px;
       padding: 5px;
       width: 35px;
       text-align: center;
-      font-size: 10px;
-      border-radius: 30rem;
-      padding: 5px;
+      font-size: 12px;
+      border-radius: 50%;
+      padding: 10px;
       margin-left: -27px;
+
+      &:hover{
+          background-color: $primary;
+      }
   }
 
 .new{
@@ -191,6 +188,7 @@ margin: -8px;
     }
     & i{
         margin: 10px;
+        color: black;
         &:hover{
         background-color: $primary;
         }
@@ -223,4 +221,106 @@ margin: -8px;
                 padding: 10px;
             }
     }
+menu 
+
+.menu--container{
+    width: $wdt;
+    margin: -8px;
+    border-radius: 40px 40px 0px 0px;
+    background-color: $quartiary;
+    padding: 20px;
+    
+    top: 240px;
+    left: 0px;
+}
+.restaurant-image{
+  width: 352px;
+  position: relative;
+  top: 0;
+  left: 0;
+  margin: -8px;
+    
+}
+.logo__rest img{
+    width: 150px;
+    margin-left: 60px;
+}
+.logo__rest{
+    padding: 12px;
+}
+.title--menu{
+    font-family: Shrikhand;
+    text-transform: capitalize;
+    font-size: 26px;
+}
+h3{
+    text-transform: uppercase;
+    font-weight: 150;
+    margin-bottom: 8px;
+    }
+.btn-border{
+  border-bottom: 3px solid $tertiary;
+    width: 43px;  
+}    
+
+
+.plate--container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 270px;
+    flex-direction: column;
+    margin: 10px;
+    padding: 15px; 
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: $shadow;
+    
+    &--name{
+        font-size: 16px;
+        font-weight: bold;
+    }
+    &--info{
+        font-size: 12px;
+    }
+
+}
+
+
+
+.footer-container-menu img{
+width: 90px;
+color: white;
+align-items: center;
+margin-left: -10px;
+}
+.footer-container-menu{
+    background-color: #454546;
+    color: white;
+    text-decoration: none;
+    margin: -8px;
+    padding: 20px;
+    
+    width: $wdt;
+    & img{
+        width: 90px;
+        filter:invert(100%)
+    }
+    a:link {
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: none;
+    }
+    a:visited {
+        color: white;
+    }
+    & a{
+        padding: 10px;
+    }
+}
+
+
+
+
+
 }
