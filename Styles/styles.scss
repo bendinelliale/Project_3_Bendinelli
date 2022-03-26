@@ -8,6 +8,16 @@ body{
     flex-wrap: wrap;
      cursor: pointer;
 }
+a:visited{
+    text-decoration: none;
+    text-transform: none;
+    color: black;
+}
+a:active{
+    text-decoration: none;
+    text-transform: none;
+    color: black;
+}
 .page--container{
     width: $wdt;
     margin: -8px;
@@ -192,7 +202,8 @@ margin: -8px;
         margin: 10px;
         color: black;
         &:hover{
-        background-color: $primary;
+        fill: $primary;
+        
         }
     }
 }
@@ -232,6 +243,7 @@ margin: -8px;
     position: relative;
     top: -28px;
     left: 227px
+    
 }
 
 .menu--container{
@@ -337,6 +349,9 @@ margin-left: -10px;
     & img{
         width: 90px;
         filter:invert(100%)
+    }
+    & a{
+        color: white;
     }
     a:link {
         text-decoration: none;

@@ -6,6 +6,18 @@
     cursor: pointer;
   }
 
+  a:visited {
+    text-decoration: none;
+    text-transform: none;
+    color: black;
+  }
+
+  a:active {
+    text-decoration: none;
+    text-transform: none;
+    color: black;
+  }
+
   .page--container {
     width: 100%;
     margin: -8px;
@@ -186,7 +198,7 @@
     color: black;
   }
   .restaurants-container i:hover {
-    background-color: #9356DC;
+    fill: #9356DC;
   }
 
   .footer-container {
@@ -333,6 +345,9 @@
   .footer-container-menu img {
     width: 90px;
     filter: invert(100%);
+  }
+  .footer-container-menu a {
+    color: white;
   }
   .footer-container-menu a:link {
     text-decoration: none;
