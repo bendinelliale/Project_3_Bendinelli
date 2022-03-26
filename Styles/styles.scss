@@ -238,6 +238,10 @@ margin: -8px;
                 font-size: 10px;
             }
     }
+
+.margin-10{
+        margin-left: -12px;
+}    
 /*__________Menu*/
 .title--menu--heart{
     position: relative;
@@ -318,15 +322,23 @@ h3{
     background-color: $tertiary;
     width: 51px;
     border-radius: 0px 20px 20px 0px;
-    height: 32px;
-    margin: 0px;
-    padding: 0px;
-    top: 42px;
+    height: 63px;
+    position: relative;
+    left: 198px;
+    top: -72px;
     & i{
         color: white;
         font-size: 20px;
+        position: relative;
+        top: 21px;
+        left: 14px;
+        }
+        .anim {
+            transition: 0.5s;
+            transform: translateX(100%);
+          }
     }
-}
+
 
 
 .footer-container-menu img{
@@ -369,8 +381,7 @@ margin-left: -10px;
         font-size: 10px;
     }
 }
-
-
-
-
+.margin-10{
+        margin-left: -12px;
+}
 }
