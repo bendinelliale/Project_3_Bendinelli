@@ -238,10 +238,23 @@
   }
 
   /*__________Menu*/
-  .title--menu--heart {
+  .far fa-heart {
     position: relative;
     top: -28px;
     left: 227px;
+  }
+  .far fa-heart:hover {
+    display: inline-block;
+  }
+
+  .fas fa-heart {
+    position: relative;
+    top: -28px;
+    left: 227px;
+    background-color: #9356DC;
+  }
+  .fas fa-heart:hover {
+    display: inline-block;
   }
 
   .menu--container {
@@ -291,16 +304,22 @@
 
   .plate--container {
     display: flex;
-    flex-wrap: wrap;
-    width: 227px;
-    height: 32px;
-    flex-direction: column;
+    flex-direction: row;
     margin: 10px;
-    padding: 15px;
     background-color: white;
     border-radius: 20px;
     box-shadow: 0 0 7px #cccbcb;
     margin-left: -8px;
+    margin: 10px;
+    height: 72px;
+  }
+  .plate--container--description {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    flex-direction: column;
+    padding-right: 60px;
+    width: 200px;
   }
   .plate--container--name {
     font-size: 12px;
@@ -312,27 +331,28 @@
   .plate--container--price {
     font-size: 14px;
     font-weight: bold;
+    padding-top: 18px;
+    padding-right: 10px;
   }
-
-  .ani--container {
+  .plate--container .ani--container {
     background-color: #99E2D0;
     width: 51px;
     border-radius: 0px 20px 20px 0px;
-    height: 63px;
-    position: relative;
-    left: 198px;
-    top: -72px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    display: none;
   }
-  .ani--container i {
+  .plate--container .ani--container i {
     color: white;
     font-size: 20px;
-    position: relative;
-    top: 21px;
-    left: 14px;
+    margin-top: 15px;
   }
-  .ani--container .anim {
-    transition: 0.5s;
-    transform: translateX(100%);
+  .plate--container:hover .ani--container {
+    display: block;
+    transition: 3s;
+    transform: translateX(0%);
   }
 
   .footer-container-menu img {

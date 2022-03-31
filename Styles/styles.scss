@@ -46,7 +46,7 @@ margin-left: -8px;
     border-top: 2px solid #b9b8b9;
     & a{
         margin-left: 20px;
-    }   
+    }
 }
 
 .location--container{
@@ -59,7 +59,7 @@ margin-left: -8px;
     a:visited {
         color: black;
           }
-           
+
 }
 
 .text-discover{
@@ -125,7 +125,7 @@ margin: -8px;
     & i{
         margin-left: 5px;
         color: gray;
-        
+
     }
 
     &:hover {
@@ -171,10 +171,10 @@ margin: -8px;
     @include flex__column;
     background-color: $quartiary;
     margin: -8px;
-    
+
     &__card{
     display: flex;
-    flex-wrap: wrap;    
+    flex-wrap: wrap;
     justify-content: space-between;
     border-radius: 1rem;
     box-shadow: 0 0 7px gray;
@@ -203,7 +203,7 @@ margin: -8px;
         color: black;
         &:hover{
         fill: $primary;
-        
+
         }
     }
 }
@@ -241,13 +241,24 @@ margin: -8px;
 
 .margin-10{
         margin-left: -12px;
-}    
+}
 /*__________Menu*/
-.title--menu--heart{
+.far fa-heart{
     position: relative;
     top: -28px;
-    left: 227px
-    
+    left: 227px;
+    &:hover{
+        display: inline-block;
+    }   
+}
+.fas fa-heart{
+    position: relative;
+    top: -28px;
+    left: 227px;
+    background-color: $primary;
+    &:hover{
+        display: inline-block;
+    }
 }
 
 .menu--container{
@@ -266,7 +277,7 @@ margin: -8px;
   top: 73px;
   left: 0;
   margin: -8px;
-    
+
 }
 .logo__rest img{
     width: 150px;
@@ -287,57 +298,75 @@ h3{
     }
 .btn-border{
   border-bottom: 3px solid $tertiary;
-    width: 43px;  
-}    
+    width: 43px;
+}
 
 
 .plate--container{
     display: flex;
-    flex-wrap: wrap;
-    width: 227px;
-    height: 32px;
-    flex-direction: column;
+    flex-direction: row;
     margin: 10px;
-    padding: 15px; 
     background-color: white;
     border-radius: 20px;
-    box-shadow: $shadow;
-    margin-left: -8px;
+    box-shadow: 0 0 7px #cccbcb;
+    margin-left: -8px;;
+    margin: 10px;
+    height: 72px;
     
+
+&--description{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    flex-direction: column;
+    padding-right: 60px;
+    width: 200px;
+
+}
     &--name{
         font-size: 12px;
         font-weight: bold;
+        
+
     }
     &--info{
         font-size: 10px;
+    
     }
     &--price{
         font-size: 14px;
         font-weight: bold;
+        padding-top: 18px;
+        padding-right: 10px;
+ 
     }
 
+    .ani--container{
+        background-color: #99E2D0;
+        width: 51px;
+        border-radius: 0px 20px 20px 0px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+        display: none;
+        & i{
+            color: white;
+            font-size: 20px;
+            margin-top: 15px;
+        
+            }
+            
+        }
+        &:hover {
+            .ani--container{
+                display: block;
+                transition: 3s;
+                transform: translateX(0%);
+            }
+        }
 }
 
-.ani--container{
-    background-color: $tertiary;
-    width: 51px;
-    border-radius: 0px 20px 20px 0px;
-    height: 63px;
-    position: relative;
-    left: 198px;
-    top: -72px;
-    & i{
-        color: white;
-        font-size: 20px;
-        position: relative;
-        top: 21px;
-        left: 14px;
-        }
-        .anim {
-            transition: 0.5s;
-            transform: translateX(100%);
-          }
-    }
 
 
 
