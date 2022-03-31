@@ -262,7 +262,7 @@ margin: -8px;
 }
 
 .menu--container{
-    width: 244px;
+    width: 280px;
     margin: -8px;
     border-radius: 40px 40px 0px 0px;
     background-color: $quartiary;
@@ -272,7 +272,7 @@ margin: -8px;
     left: 0px;
 }
 .restaurant-image{
-  width: 91%;
+  width: 328px;
   position: absolute;
   top: 73px;
   left: 0;
@@ -311,7 +311,7 @@ h3{
     box-shadow: 0 0 7px #cccbcb;
     margin-left: -8px;;
     margin: 10px;
-    height: 72px;
+    height: 75px;
     
 
 &--description{
@@ -319,7 +319,7 @@ h3{
     flex-wrap: wrap;
     padding: 10px;
     flex-direction: column;
-    padding-right: 60px;
+    padding-right: 10px;
     width: 200px;
 
 }
@@ -361,8 +361,12 @@ h3{
         &:hover {
             .ani--container{
                 display: block;
-                transition: 3s;
+                transition: 2s;
+                transition-duration: 3s;
                 transform: translateX(0%);
+                transform-origin: right;
+                transition-timing-function: ease-out;
+                animation-direction: reverse;
             }
         }
 }
@@ -385,7 +389,7 @@ margin-left: -10px;
     padding: 20px;
     position: relative;
     top: 183px;
-    width: 244px;
+    width: 280px;
     font-size: 12px;
     & img{
         width: 90px;

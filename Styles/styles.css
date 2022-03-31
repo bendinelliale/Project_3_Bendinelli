@@ -258,7 +258,7 @@
   }
 
   .menu--container {
-    width: 244px;
+    width: 280px;
     margin: -8px;
     border-radius: 40px 40px 0px 0px;
     background-color: #EEEEEE;
@@ -269,7 +269,7 @@
   }
 
   .restaurant-image {
-    width: 91%;
+    width: 328px;
     position: absolute;
     top: 73px;
     left: 0;
@@ -311,14 +311,14 @@
     box-shadow: 0 0 7px #cccbcb;
     margin-left: -8px;
     margin: 10px;
-    height: 72px;
+    height: 75px;
   }
   .plate--container--description {
     display: flex;
     flex-wrap: wrap;
     padding: 10px;
     flex-direction: column;
-    padding-right: 60px;
+    padding-right: 10px;
     width: 200px;
   }
   .plate--container--name {
@@ -351,8 +351,12 @@
   }
   .plate--container:hover .ani--container {
     display: block;
-    transition: 3s;
+    transition: 2s;
+    transition-duration: 3s;
     transform: translateX(0%);
+    transform-origin: right;
+    transition-timing-function: ease-out;
+    animation-direction: reverse;
   }
 
   .footer-container-menu img {
@@ -370,7 +374,7 @@
     padding: 20px;
     position: relative;
     top: 183px;
-    width: 244px;
+    width: 280px;
     font-size: 12px;
   }
   .footer-container-menu img {
