@@ -242,12 +242,14 @@
     position: relative;
     top: -28px;
     left: 227px;
+    display: block;
   }
   .far fa-heart:hover {
     display: inline-block;
   }
 
   .fas fa-heart {
+    display: none;
     position: relative;
     top: -28px;
     left: 227px;
@@ -343,20 +345,24 @@
     text-align: center;
     padding: 10px;
     display: none;
+    transition: margin-right 750ms ease;
   }
   .plate--container .ani--container i {
     color: white;
     font-size: 20px;
     margin-top: 15px;
+    transition: 4s;
+  }
+  .plate--container .ani--container i:hover {
+    transform: scale(0.1);
+    transform: rotate(360deg);
+    transition: transform 330ms ease-in-out;
   }
   .plate--container:hover .ani--container {
     display: block;
-    transition: 2s;
-    transition-duration: 3s;
-    transform: translateX(0%);
-    transform-origin: right;
-    transition-timing-function: ease-out;
-    animation-direction: reverse;
+    transform: scaleX(1);
+    transition: transform 330ms ease-in-out;
+    transform-origin: 50% right;
   }
 
   .footer-container-menu img {
