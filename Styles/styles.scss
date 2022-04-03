@@ -243,24 +243,26 @@ margin: -8px;
         margin-left: -12px;
 }
 /*__________Menu*/
-.far fa-heart{
+.inactive{
     position: relative;
     top: -28px;
-    left: 227px;
+    left: 257px;
     display: block;
-    &:hover{
-        display: inline-block;
-    }   
+    a:hover{
+        display: none;
+    }
+      
 }
-.fas fa-heart{
+.active{
     display: none;
     position: relative;
     top: -28px;
-    left: 227px;
-    background-color: $primary;
-    &:hover{
-        display: inline-block;
+    left: 257px;
+    color: #9356DC;
+    a:hover{
+        display: block;
     }
+    
 }
 
 .menu--container{

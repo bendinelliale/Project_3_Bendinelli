@@ -238,25 +238,25 @@
   }
 
   /*__________Menu*/
-  .far fa-heart {
+  .inactive {
     position: relative;
     top: -28px;
-    left: 227px;
+    left: 257px;
     display: block;
   }
-  .far fa-heart:hover {
-    display: inline-block;
+  .inactive a:hover {
+    display: none;
   }
 
-  .fas fa-heart {
+  .active {
     display: none;
     position: relative;
     top: -28px;
-    left: 227px;
-    background-color: #9356DC;
+    left: 257px;
+    color: #9356DC;
   }
-  .fas fa-heart:hover {
-    display: inline-block;
+  .active a:hover {
+    display: block;
   }
 
   .menu--container {
