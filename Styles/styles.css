@@ -120,7 +120,7 @@
     display: inline-block;
     height: 52px;
     width: 255px;
-    border: 2px solid #EEEEEE;
+    border: #EEEEEE;
     border-radius: 15px;
     padding: 18px;
     margin: 5px;
@@ -130,8 +130,11 @@
     margin-left: 5px;
     color: gray;
   }
+  .btn i:hover {
+    color: #9356DC;
+  }
   .btn:hover {
-    background-color: #b99ed8;
+    background-color: #d7cce3;
     cursor: pointer;
   }
 
@@ -178,6 +181,24 @@
     margin: -8px;
     width: 320px;
   }
+  .restaurants-container__heart:hover .front {
+    display: none;
+  }
+  .restaurants-container__heart:hover .back {
+    display: block;
+  }
+  .restaurants-container__heart {
+    margin: 10px;
+  }
+  .restaurants-container__heart .front {
+    display: block;
+    transition: all 5s linear;
+  }
+  .restaurants-container__heart .back {
+    display: none;
+    color: #9356DC;
+    transition: all 5s linear;
+  }
   .restaurants-container__card {
     display: flex;
     flex-wrap: wrap;
@@ -204,13 +225,6 @@
   .restaurants-container a {
     width: 100%;
   }
-  .restaurants-container i {
-    margin: 10px;
-    color: black;
-  }
-  .restaurants-container i:hover {
-    fill: #9356DC;
-  }
 
   .footer-container {
     background-color: #454546;
@@ -230,9 +244,11 @@
   }
   .footer-container a:link {
     text-decoration: none;
+    color: white;
   }
   .footer-container a:hover {
     text-decoration: none;
+    color: white;
   }
   .footer-container a:visited {
     color: white;
@@ -254,10 +270,7 @@
     top: -28px;
     left: 257px;
     display: block;
-    transition: all 2s linear;
-  }
-  .inactive:hover {
-    display: none;
+    transition: all 5s linear;
   }
 
   .active {
@@ -266,11 +279,7 @@
     top: -28px;
     left: 257px;
     color: #9356DC;
-    transition: all 2s linear;
-  }
-  .active:hover {
-    display: block;
-    opacity: 0.1;
+    transition: all 5s linear;
   }
 
   .menu--container {
@@ -283,30 +292,34 @@
     top: 176px;
     left: 0px;
   }
-
-  @-webkit-keyframes progress-bar {
-    from {
-      transform: scaleY(0);
-      opacity: 0;
-      transform-origin: bottom;
-    }
-    to {
-      transform: scaleY(1);
-      transform-origin: bottom;
-      opacity: 0.1;
-    }
+  .menu--container--hearts:hover .active {
+    display: block;
+  }
+  .menu--container--hearts:hover .inactive {
+    display: none;
   }
 
-  @keyframes progress-bar {
-    from {
-      transform: scaleY(0);
+  .keyframe {
+    animation: fadeIn 2s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+  @keyframes fadeIn {
+    0% {
       opacity: 0;
-      transform-origin: bottom;
     }
-    to {
-      transform: scaleY(1);
-      transform-origin: bottom;
-      opacity: 0.1;
+    100% {
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
     }
   }
 
@@ -433,6 +446,7 @@
   }
   .footer-container-menu a:link {
     text-decoration: none;
+    color: white;
   }
   .footer-container-menu a:hover {
     text-decoration: none;
